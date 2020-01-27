@@ -15,8 +15,9 @@ public class Calc {
     private double b;
 
     /**
-     * Конструктор
-     * @param sc
+     * @author Loginov M.Y.
+     * Конструктор при вызове просит у пользователя числа a  и b
+     * @param sc для ввода из консоли
      */
     public Calc (Scanner sc) {
         try{
@@ -28,6 +29,11 @@ public class Calc {
             System.out.println("ERR: ошибка формата данных");
         }
     }
+
+    /**
+     * Просит у пользователя ввести оператор и выполняет действие согласно оператору для чисел a  и b
+     * @param sc для ввода из консоли
+     */
     public void doOper (Scanner sc) {
         System.out.println("INFO: Введи знак оператора +, /");
         String operator = sc.nextLine();
