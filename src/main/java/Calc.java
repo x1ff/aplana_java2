@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 /**
+ * Задание №2
  * @author Loginov M.Y.
  * @see <a href="https://moodle.aplana.com/course/view.php?id=41&section=2"> Задание в moodle</a>
  */
@@ -13,7 +14,7 @@ public class Calc {
      * Конструктор при вызове просит у пользователя числа a  и b
      * @param sc для ввода из консоли
      */
-    private Calc(Scanner sc) {
+    public Calc(Scanner sc) {
         try{
             System.out.println("INFO: Введите a");
             a = Double.parseDouble(sc.nextLine().replace(',','.'));
@@ -29,7 +30,7 @@ public class Calc {
      * Просит у пользователя ввести оператор и выполняет действие согласно оператору для чисел a  и b
      * @param sc для ввода из консоли
      */
-    private void doOper(Scanner sc) {
+    public void doOper(Scanner sc) {
         System.out.println("INFO: Введи знак оператора +, /");
         String operator = sc.nextLine();
         switch (operator) {
