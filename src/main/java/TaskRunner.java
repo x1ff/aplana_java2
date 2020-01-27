@@ -45,5 +45,6 @@ public class TaskRunner {
         Scanner sc = new Scanner(System.in);
         TaskRunner runner = new TaskRunner(sc);
         runner.run(sc);
+        sc.close();
     }
 }
