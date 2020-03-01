@@ -1,0 +1,14 @@
+{
+    "Candy": {
+      "weight": 15.00,
+      "price": 1.00
+    },
+    "Jellybean": {
+      "weight": 40.00,
+      "price": 2.00
+    },
+    "Chocolate": {
+      "weight": 95.00,
+      "price": 4.00
+    }
+}

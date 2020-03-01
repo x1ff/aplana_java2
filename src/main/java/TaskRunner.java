@@ -1,3 +1,8 @@
+import SweetGifts.Gift;
+import SweetGifts.Sweetness;
+import org.json.simple.parser.ParseException;
+
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -15,7 +20,9 @@ public class TaskRunner {
      * @param sc для ввода из консоли
      */
     private TaskRunner(Scanner sc) {
-        System.out.println("INFO: введите номер задания: 1 - калькулятор, 2 - поиск максимального слова");
+        System.out.println("INFO: введите номер задания: \n1 - калькулятор, \n2 - поиск максимального слова, " +
+                "\n3 - Найти максимальный отрицательный и минимальный положительный элементы массива." +
+                "\n4 - Подарок");
         taskNumber = Integer.parseInt(sc.nextLine());
     }
 
@@ -23,7 +30,7 @@ public class TaskRunner {
      * Исходя из номера задния выполняет задание.
      * @param sc
      */
-    public void run (Scanner sc) {
+    public void run (Scanner sc) throws IOException, ParseException {
         switch(taskNumber) {
             case 1 :
                 Calc calc = new Calc(sc);
@@ -33,6 +40,26 @@ public class TaskRunner {
                 Words words = new Words(sc);
                 words.searchTheLongestWord();
                 break;
+            case 3 :
+                /**
+                 * 1. Массив размерностью 20, заполняется случайными целыми числами от -10 до 10.
+                 * Найти максимальный отрицательный и минимальный положительный элементы массива. Поменять их местами.
+                 */
+                MyArray arr = new MyArray();
+                arr.showNumbers();
+                arr.swapElements(arr.findIndexOfMaxNegativeInt(), arr.findIndexOfMinPositiveInt());
+                arr.showNumbers();
+                break;
+            case 4 :
+                /**
+                 * 2. Формируется новогодний подарок. Он может включать в себя разные сладости (Candy, Jellybean, etc.)
+                 * У каждой сладости есть название, вес, цена и свой уникальный параметр.
+                 * Необходимо собрать подарок из сладостей. Найти общий вес подарка, общую стоимость подарка и
+                 * вывести на консоль информацию о всех сладостях в подарке.
+                 */
+                Gift g = new Gift(15);
+                g.printInfo(Sweetness.getCounter());
+                break;
             default: System.out.println("ERR: нету заданиея с таким номером");
         }
     }
@@ -41,7 +68,7 @@ public class TaskRunner {
      * Главная функция, отсюда все запускается
      * @param args программа не работает с параметрами
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, ParseException {
         Scanner sc = new Scanner(System.in);
         TaskRunner runner = new TaskRunner(sc);
         runner.run(sc);
