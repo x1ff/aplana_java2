@@ -1,7 +1,7 @@
 package SweetGifts;
 
 /**
- * Задание №4 Массивы, классы
+ * Задание №4 Массивы, классы.
  * 2. Формируется новогодний подарок. Он может включать в себя разные сладости (Candy, Jellybean, etc.)
  * У каждой сладости есть название, вес, цена и свой уникальный параметр.
  * Необходимо собрать подарок из сладостей. Найти общий вес подарка,
@@ -14,6 +14,11 @@ public abstract class Sweetness {
     private double weight; // kg
     private double price; // $
 
+    /**
+     * Конструктор создает сладость заданными параметрами
+     * @param weight - вес
+     * @param price - цена
+     */
     public Sweetness(double weight, double price) {
         this.weight = weight;
         this.price = price;
@@ -38,7 +43,9 @@ public abstract class Sweetness {
         this.price = price;
     }
 
-
+    /**
+     * Метод возвращает @return информацию о сладости
+     */
     @Override
     public String toString() {
         return "\t weight = " + weight + "\t  price = " + price;

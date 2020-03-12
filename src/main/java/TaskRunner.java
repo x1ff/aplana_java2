@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /**
- * Задание №3
+ * Задание №3.
  * @author Loginov M.Y.
  * @see <a href="https://moodle.aplana.com/course/view.php?id=41&section=3"> Задание в moodle</a>
  * @see Calc для запуска выбрпть 1
@@ -28,7 +28,9 @@ public class TaskRunner {
 
     /**
      * Исходя из номера задния выполняет задание.
-     * @param sc
+     * @param sc Scanner for scan console
+     * @exception IOException can happen if sc will not correctly
+     * @exception ParseException can happen if parse input value will wrong
      */
     public void run (Scanner sc) throws IOException, ParseException {
         switch(taskNumber) {
@@ -67,6 +69,8 @@ public class TaskRunner {
     /**
      * Главная функция, отсюда все запускается
      * @param args программа не работает с параметрами
+     * @exception IOException can happen if sc will not correctly
+     * @exception ParseException can happen if parse input value will wrong
      */
     public static void main(String[] args) throws IOException, ParseException {
         Scanner sc = new Scanner(System.in);

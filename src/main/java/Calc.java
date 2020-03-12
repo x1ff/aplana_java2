@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * Задание №2
+ * Задание №2.
  * @author Loginov M.Y.
  * @see <a href="https://moodle.aplana.com/course/view.php?id=41&section=2"> Задание в moodle</a>
  */

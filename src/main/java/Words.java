@@ -3,7 +3,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * Задание №3
+ * Задание №3.
  * @author Loginov M.Y.
  * @see <a href="https://moodle.aplana.com/course/view.php?id=41&section=3"> Задание в moodle</a>
  */
@@ -14,7 +14,7 @@ public class Words {
     /**
      * Контруктор создает экземпляр класса и запрашивая у пользователя данные заполняет объект.
      * @param sc для ввода из консоли
-     * @auther Loginov M. Y.
+     * @author Loginov M. Y.
      */
     public Words(Scanner sc) {
         System.out.println("INFO: Введите колличество слов");

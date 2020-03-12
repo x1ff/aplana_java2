@@ -1,5 +1,5 @@
 /**
- * Задание №4 Массивы, классы
+ * Задание №4 Массивы, классы.
  * 1. Массив размерностью 20, заполняется случайными целыми числами от -10 до 10.
  * Найти максимальный отрицательный и минимальный положительный элементы массива.
  * Поменять их местами.
@@ -9,16 +9,19 @@
 public class MyArray {
     private int[] numbers;
 
+    /**
+     * Конструктор создает с 20 рандомными числами
+     */
     public MyArray() {
         this.numbers = new int[20];
-        this.setNumbersByRandom();
-    }
-    private void setNumbersByRandom() {
         for (int i =0; i < 20; i++) {
             this.numbers[i] = (int) (Math.random() * 21) - 10;
         }
     }
 
+    /**
+     * Метод отображет элементы массива
+     */
     public void showNumbers() {
         System.out.println("INFO: this is numbers");
         System.out.println("i \t value");
@@ -26,6 +29,10 @@ public class MyArray {
             System.out.println("" + i + " \t " + this.numbers[i]);
         }
     }
+
+    /**
+     * Метод возвращает @return индекс элемента массива с максимальным отприцательным числом
+     */
     public int findIndexOfMaxNegativeInt() {
         int currentInt = this.numbers[0];
         int currentIndex = 0;
@@ -41,6 +48,10 @@ public class MyArray {
         }
         return currentIndex;
     }
+
+    /**
+     *  Метод возвращает @return индекс элемента массива с минимальным положительным числом
+     */
     public int findIndexOfMinPositiveInt() {
         int currentInt = this.numbers[0];
         int currentIndex = 0;
@@ -56,6 +67,12 @@ public class MyArray {
         }
         return currentIndex;
     }
+
+    /**
+     * Метод меняет элементы с заданными индексами местами
+     * @param index1 - 1 индекс
+     * @param index2 - 2 индекс
+     */
     public void swapElements(int index1, int index2) {
         numbers[index1] ^= numbers[index2];
         numbers[index2] ^= numbers[index1];
