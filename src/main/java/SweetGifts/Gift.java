@@ -8,9 +8,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
-
 /**
- * Задание №4 Массивы, классы: класс описывающий подарок.
+ * Класс описывает подарок из сладостей
  */
 public class Gift {
     private ArrayList<Sweetness> gift;
@@ -26,11 +25,10 @@ public class Gift {
     }
 
     /**
-     * @author Логонов М. Ю.
-     * @param count - колличество конфет в подарке
+     * Конструктор формирует подарок случайными сладостями, но с фиксированным их колличеством
+     * @param count колличество конфет в подарке
      * @throws IOException может случиться при не коректном ввода
      * @throws ParseException может случиться при не корректном парсе
-     * Конструктор формирует подарок случайными сладостями, но с фиксированным их колличеством
      */
     public Gift(int count) throws IOException, ParseException {
         weight = 0;
@@ -45,7 +43,9 @@ public class Gift {
 
     /**
      * Метод задает параметры сладостей из файла:
-     * @see <a href=file:..\src\main\resources\Sweetness.json>\src\main\resources\Sweetness.json</a>
+     * @throws IOException может случиться при не коректном ввода
+     * @throws ParseException  может случиться при не корректном парсе
+     * @see <a href=file:../src/main/resources/Sweetness.json>/src/main/resources/Sweetness.json</a>
      * */
     private void setSweetnessParam() throws IOException, ParseException {
         File config = new File("src/main/resources/Sweetness.json");
@@ -55,7 +55,7 @@ public class Gift {
 
     /**
      * Метод добавляет сладость с нудным типом в подарок
-     * @param type - тип сладости: 1 - Candy, 2 - Jellybean, default - Chocolate
+     * @param type тип сладости: 1 - Candy, 2 - Jellybean, default - Chocolate
      * @throws IOException может случиться при не коректном ввода
      * @throws ParseException  может случиться при не корректном парсе
      */
@@ -81,9 +81,8 @@ public class Gift {
 
     /**
      * Метод реализует отображение информации о сладостях в падарке
-     * @param counter
      */
-    public void printInfo(int counter) {
+    public void printInfo() {
         System.out.println("INFO: weight = " + getWeight() + "g");
         System.out.println("INFO: price = " + getPrice() + "$");
         System.out.println("INFO: Gift contains:");
@@ -94,6 +93,6 @@ public class Gift {
 
     public static void main(String[] args) throws IOException, ParseException {
         Gift g = new Gift(15);
-        g.printInfo(Sweetness.getCounter());
+        g.printInfo();
     }
 }

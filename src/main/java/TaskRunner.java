@@ -1,5 +1,4 @@
 import SweetGifts.Gift;
-import SweetGifts.Sweetness;
 import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
@@ -60,7 +59,7 @@ public class TaskRunner {
                  * вывести на консоль информацию о всех сладостях в подарке.
                  */
                 Gift g = new Gift(15);
-                g.printInfo(Sweetness.getCounter());
+                g.printInfo();
                 break;
             default: System.out.println("ERR: нету заданиея с таким номером");
         }

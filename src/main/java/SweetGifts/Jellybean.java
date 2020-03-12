@@ -8,8 +8,8 @@ public class Jellybean extends Sweetness{
 
     /**
      * Коструктор создает класс с заданными параметрами
-     * @param weight - вес
-     * @param price - цена
+     * @param weight вес
+     * @param price цена
      */
     public Jellybean(double weight, double price) {
         super(weight, price);
@@ -17,14 +17,16 @@ public class Jellybean extends Sweetness{
     }
 
     /**
-     * Метод возвращает @return id  сладости
+     * Метод возвращает id  сладости
+     * @return id  сладости
      */
     public int getId() {
         return id;
     }
 
     /**
-     * Метод возвращает @return информацию о сладости
+     * Метод возвращает информацию о сладости
+     * @return информация о сладости
      */
     @Override
     public String toString() {

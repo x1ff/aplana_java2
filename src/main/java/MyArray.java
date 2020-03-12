@@ -31,7 +31,8 @@ public class MyArray {
     }
 
     /**
-     * Метод возвращает @return индекс элемента массива с максимальным отприцательным числом
+     * Метод возвращает
+     * @return индекс элемента массива с максимальным отприцательным числом
      */
     public int findIndexOfMaxNegativeInt() {
         int currentInt = this.numbers[0];
@@ -50,7 +51,8 @@ public class MyArray {
     }
 
     /**
-     *  Метод возвращает @return индекс элемента массива с минимальным положительным числом
+     *  Метод возвращает
+     *  @return индекс элемента массива с минимальным положительным числом
      */
     public int findIndexOfMinPositiveInt() {
         int currentInt = this.numbers[0];

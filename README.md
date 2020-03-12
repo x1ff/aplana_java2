@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+## Курс java 2.0
 
-You can use the [editor on GitHub](https://github.com/x1ff/aplana_java2/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Курс расположен на [Moodle](https://moodle.appline.ru/auth/ldap/ntlmsso_attempt.php)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Задания
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/x1ff/aplana_java2/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+| Номер | Текст задания | Решение |
+|---|---------------|---|
+| 1.1 | Установить Java, Maven, IntelliJ IDEA | Скрины на почте |
+| 1.2 | Создать профиль на GitHub | [Сылка](https://github.com/x1ff) на почте |
+| 2.1 | Начинаем писать калькулятор: Реализовать сложение дробных чисел, которые пользователь вводит в консоль. Использовать комментарии и JavaDoc при описании метода. Использовать форматирование при выводе результата в консоль. Полученный результат округлять до 4-х знаков после запятой. | [link](https://github.com/x1ff/aplana_java2/blob/master/src/main/java/Calc.java) |
+| 2.2 | Запушить проект в свой репозиторий на GitHub | [link](https://github.com/x1ff/aplana_java2/blob/master/src/main/java/Calc.java) |
+| 2.* | Добавить возможность выбора другой операции (сложение, вычитание, деление, умножение) | [link](https://github.com/x1ff/aplana_java2/blob/master/src/main/java/Calc.java) |
+| 3.1 | Реализовать базовые операции калькулятора (+,-,/,*) для предыдущего задания | [link](https://github.com/x1ff/aplana_java2/blob/master/src/main/java/Calc.java) |
+| 3.2 | Поиск максимального элемента в массиве. Для начала задать массив слов.Размерность массива произвольна, задается в консоли. После чего в консоли вводятся слова в количестве равном заданной длине массива. В полученном массиве необходимо найти самое длинное слово. Результат вывести на консоль | [link](https://github.com/x1ff/aplana_java2/blob/master/src/main/java/Calc.java) |
+| 3.3 | Программа должна выполнять одно из заданий на выбор. Если в консоли ввести 1 - запуститься выполнение калькулятора, если 2 - поиск максимального слова в массиве. | [link](https://github.com/x1ff/aplana_java2/blob/master/src/main/java/TaskRunner.java) |
+| 4.1 | Массив размерностью 20, заполняется случайными целыми числами от -10 до 10. Найти максимальный отрицательный и минимальный положительный элементы массива. Поменять их местами. | [link](https://github.com/x1ff/aplana_java2/blob/master/src/main/java/MyArray.java) |
+| 4.2 | Формируется новогодний подарок. Он может включать в себя разные сладости (Candy, Jellybean, etc.) У каждой сладости есть название, вес, цена и свой уникальный параметр. Необходимо собрать подарок из сладостей. Найти общий вес подарка, общую стоимость подарка и вывести на консоль информацию о всех сладостях в подарке. | [package](https://github.com/x1ff/aplana_java2/tree/master/src/main/java/SweetGifts) [javadoc](https://x1ff.github.io/aplana_java2/SweetGifts/package-summary.html) |
+| 5 | Реализовать калькулятор в стиле ООП. Архитектуру приложения продумать самостоятельно. |  |
+| 6 | Есть входной файл с набором слов, написанных через пробел. Необходимо: Прочитать слова из файла. Отсортировать в алфавитном порядке. Посчитать сколько раз каждое слово встречается в файле. Вывести статистику на консоль Найти слово с максимальным количеством повторений. Вывести на консоль это слово и сколько раз оно встречается в файле |
+| 7 | Добавить обработку исключений в задание с ООП калькуляторам (например, исключение может возникнуть при делении на ноль) | |
+| 8 | Покрыть Unit тестами последний проект с калькулятором | |

@@ -8,8 +8,8 @@ public class Chocolate extends Sweetness{
 
     /**
      * Конструктор создающий шоколад с нужными параметрами
-     * @param weight - вес
-     * @param price - цена
+     * @param weight вес
+     * @param price цена
      */
     public Chocolate(double weight, double price) {
         super(weight, price);
@@ -17,14 +17,16 @@ public class Chocolate extends Sweetness{
     }
 
     /**
-     * @return - id  шоколада
+     * Метод возвращает  id  слодости
+     * @return id  шоколада
      */
     public int getId() {
         return id;
     }
 
     /**
-     * @return - информация о шоколаде для вывода
+     * Метод возвращает информацию о шоколаде
+     * @return информация о шоколаде для вывода
      */
     @Override
     public String toString() {

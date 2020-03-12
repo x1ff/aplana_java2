@@ -1,15 +1,15 @@
 package SweetGifts;
 
 /**
- * Задание №4 Массивы, классы: класс описывающий конфету.
+ * Класс описывающий конфету.
  */
 public class Candy extends Sweetness{
     public final int id;
 
     /**
      * Конструктор, создающий конфету с нуцжными параметрами
-     * @param weight - вес конфеты
-     * @param price - цена конфеты
+     * @param weight вес конфеты
+     * @param price цена конфеты
      */
     public Candy(double weight, double price) {
         super(weight, price);
@@ -17,6 +17,7 @@ public class Candy extends Sweetness{
     }
 
     /**
+     * Метод возвращает id сладости
      * @return - id  конфеты
      */
     public int getId() {
@@ -24,6 +25,7 @@ public class Candy extends Sweetness{
     }
 
     /**
+     * Метод возвращает информацию о конфете
      * @return - информация о конфете для вывода
      */
     @Override
