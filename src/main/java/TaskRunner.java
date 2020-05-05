@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * Задание №3.
  * @author Loginov M.Y.
- * @see <a href="https://moodle.aplana.com/course/view.php?id=41&section=3"> Задание в moodle</a>
+ * @see <a href="https://moodle.appline.ru/course/view.php?id=41&section=3"> Задание в moodle</a>
  * @see Calc для запуска выбрпть 1
  * @see Words для запуска выбрать 2
  */

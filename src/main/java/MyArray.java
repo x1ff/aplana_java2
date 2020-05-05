@@ -4,7 +4,7 @@
  * Найти максимальный отрицательный и минимальный положительный элементы массива.
  * Поменять их местами.
  * @author Loginov M.Y.
- * @see <a href="https://moodle.aplana.com/course/view.php?id=41&section=4"> Задание в moodle</a>
+ * @see <a href="https://moodle.appline.ru/course/view.php?id=41&section=4"> Задание в moodle</a>
  */
 public class MyArray {
     private int[] numbers;

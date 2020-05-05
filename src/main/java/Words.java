@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Задание №3.
  * @author Loginov M.Y.
- * @see <a href="https://moodle.aplana.com/course/view.php?id=41&section=3"> Задание в moodle</a>
+ * @see <a href="https://moodle.appline.ru/course/view.php?id=41&section=3"> Задание в moodle</a>
  */
 public class Words {
     private ArrayList<String> stringsWords;
