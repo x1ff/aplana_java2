@@ -14,14 +14,24 @@ public class Calc {
      * Конструктор при вызове просит у пользователя числа a  и b
      * @param sc для ввода из консоли
      */
-    public Calc(Scanner sc) {
-        try{
-            System.out.println("INFO: Введите a");
-            a = Double.parseDouble(sc.nextLine().replace(',','.'));
-            System.out.println("INFO: Введите b");
-            b = Double.parseDouble(sc.nextLine().replace(',','.'));
-        } catch (NumberFormatException e) {
-            System.out.println("ERR: ошибка формата данных");
+    public Calc(Scanner sc) throws NumberFormatException {
+        while (true) {
+            try{
+                System.out.println("INFO: Введите a");
+                a = Double.parseDouble(sc.nextLine().replace(',','.'));
+                break;
+            } catch (NumberFormatException e) {
+                System.out.println("ERR: ошибка формата данных");
+            }
+        }
+        while (true) {
+            try {
+                System.out.println("INFO: Введите b");
+                b = Double.parseDouble(sc.nextLine().replace(',','.'));
+                break;
+            } catch (NumberFormatException e) {
+                System.out.println("ERR: ошибка формата данных");
+            }
         }
     }
 
@@ -31,7 +41,7 @@ public class Calc {
      * @param sc для ввода из консоли
      */
     public void doOper(Scanner sc) {
-        System.out.println("INFO: Введи знак оператора +, /");
+        System.out.println("INFO: Введи знак оператора: '+', '/', '-', '*'");
         String operator = sc.nextLine();
         switch (operator) {
             case "+":
