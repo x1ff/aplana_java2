@@ -1,7 +1,6 @@
 package OOPCalc;
 
 import java.awt.*;
-import java.util.EventListener;
 import javax.swing.*;
 
 public class Display extends JPanel {

@@ -10,8 +10,10 @@ public class Calculator extends JFrame implements ActionListener {
     private String b;
     private String oper;
     private Stage stage;
+
     private Display display;
     private ButtonSet buttonSet;
+
     private static final int WIDTH = 300;
     private static final int HEIGHT = 400;
 

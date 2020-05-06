@@ -1,9 +1,6 @@
 package OOPCalc;
 
 import java.awt.*;
-import java.awt.event.*;
-import java.awt.event.ActionListener;
-import javax.swing.*;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
@@ -20,9 +17,6 @@ public class ButtonSet extends JPanel  {
             btn.addActionListener(calc);
             this.add(btn);
         }
-        setGUI();
-    }
-    private void setGUI() {
-       setLayout(new GridLayout(4, 4));
+        setLayout(new GridLayout(4, 4));
     }
 }
